@@ -143,6 +143,10 @@ body {
     align-items: center;
 }
 
+#close {
+    display: none;
+}
+
 .logo {
     width: 50px;
     height: 50px;
@@ -219,27 +223,33 @@ body {
 }
 
 #feature .fe-box:nth-child(2) h6 {
-    background-color: rgb(204, 190, 190);
+    background-color: var(--color-texto-claro);
+    color: var(--color-texto-principal)
 }
 
 #feature .fe-box:nth-child(3) h6 {
-    background-color: rgb(136, 132, 132);
+    background-color: var(--color-texto-claro);
+    color: var(--color-texto-principal)
 }
 
 #feature .fe-box:nth-child(4) h6 {
-    background-color: rgb(219, 117, 117);
+    background-color: var(--color-texto-claro);
+    color: var(--color-texto-principal)
 }
 
 #feature .fe-box:nth-child(5) h6 {
-    background-color: rgb(210, 221, 203);
+    background-color: var(--color-texto-claro);
+    color: var(--color-texto-principal)
 }
 
 #feature .fe-box:nth-child(6) h6 {
-    background-color: rgb(123, 129, 124);
+    background-color: var(--color-texto-claro);
+    color: var(--color-texto-principal)
 }
 
 #feature .fe-box:nth-child(1) h6 {
-    background-color: rgb(192, 238, 181);
+    background-color: var(--color-texto-claro);
+    color: var(--color-texto-principal)
 }
 
 #product1 {
@@ -560,6 +570,10 @@ footer .copyright {
 /* MEDIA QUERYS */
 
 @media (max-width: 799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
     #navbar {
         display: flex;
         flex-direction: column;
@@ -597,6 +611,7 @@ footer .copyright {
     }
 
     #close {
+        display: initial;
         position: absolute;
         top: 30px;
         left: 30px;
@@ -606,6 +621,28 @@ footer .copyright {
 
     #lg-bag {
         display: none;
+    }
+
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        margin: 15px 0;
     }
 }
 
