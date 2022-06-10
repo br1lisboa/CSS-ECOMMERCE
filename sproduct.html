@@ -25,9 +25,119 @@
                 <a href="#" id="close"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
             </ul>
         </div>
-        <div id="mobile" >
+        <div id="mobile">
             <a href="carrito.html"><i class="fa-solid fa-cart-plus"></i></a>
             <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-img">
+            <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f2.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f3.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f4.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Home / Remeras</h6>
+            <h4>Moda de Hombres en Remeras</h4>
+            <h2>$100</h2>
+            <select>
+                <option>Seleccione el talle</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>Large</option>
+                <option>Small</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Agregar al carrito</button>
+            <h4>Detalles del producto</h4>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quisquam, saepe cupiditate reiciendis ea
+                sint quaerat, est dolorum ratione porro, omnis optio et esse dignissimos facere magnam ullam hic
+                accusamus.</span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Futuros inresos</h2>
+        <p>Moda ingresando</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/products/n1.jpg" alt="">
+                <div class="des">
+                    <span>Marca</span>
+                    <h5>Nombre del producto</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$$$$</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n2.jpg" alt="">
+                <div class="des">
+                    <span>Marca</span>
+                    <h5>Nombre del producto</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$$$$</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n3.jpg" alt="">
+                <div class="des">
+                    <span>Marca</span>
+                    <h5>Nombre del producto</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$$$$</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n4.jpg" alt="">
+                <div class="des">
+                    <span>Marca</span>
+                    <h5>Nombre del producto</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$$$$</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-bag-shopping cart"></i></a>
+            </div>
         </div>
     </section>
 
@@ -91,6 +201,24 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let mainImg = document.getElementById("MainImg")
+        let smallImg = document.getElementsByClassName("small-img")
+
+        smallImg[0].oneclick = function () {
+            mainImg.src = smallImg[0].src
+        }
+        smallImg[1].oneclick = function () {
+            mainImg.src = smallImg[1].src
+        }
+        smallImg[2].oneclick = function () {
+            mainImg.src = smallImg[2].src
+        }
+        smallImg[3].oneclick = function () {
+            mainImg.src = smallImg[3].src
+        }
+    </script>
 
     <script src="script.js"></script>
 </body>
